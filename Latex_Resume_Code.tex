@@ -1,144 +1,237 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\
+
 %%%%%%%% BEGIN PREAMBLE %%%%%%%% \
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  \
+
+ 
 
 \documentclass[paper=a4, fontsize=11pt]{scrartcl} % A4 paper and 11pt font size
 
 %%% package imports %%%
+
 \usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+
 \usepackage{mathptmx}% http://ctan.org/pkg/mathptmx
+
 \usepackage[english]{babel} % English language/hyphenation
+
 \usepackage{enumitem}
+
 \usepackage{geometry}
+
 \usepackage{tabularx}
+
 \usepackage[colorlinks = true,
-            linkcolor = blue,
-            urlcolor  = blue,
-            citecolor = blue,
-            anchorcolor = blue]{hyperref}
+linkcolor = blue,
+urlcolor  = blue,
+citecolor = blue,
+anchorcolor = blue]{hyperref}
 
 
 %%% layout settings %%%
+
 \geometry{left=0.7in, right=0.7in, top=20mm, bottom=20mm}
 \pagenumbering{gobble}
 \setlength\parindent{0pt}
 
 
 %%% new commands & environments %%%
+
 \newcommand{\I}{--}
 \newenvironment{mycenter}[1][\topsep]
-  {\setlength{\topsep}{#1}\par\kern\topsep\centering}% \begin{mycenter}[<len>]
-  {\par\kern\topsep}% \end{mycenter}
+{\setlength{\topsep}{#1}\par\kern\topsep\centering}% \begin{mycenter}[<len>]
+{\par\kern\topsep}% \end{mycenter}
+
+ 
 
 \newcommand*{\email}[1]{%
-  \normalsize\href{mailto:#1}{#1}
-  }
+  \normalsize\href{mailto:#1}{#1}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  /
+
 %%%%%%%%% END PREAMBLE %%%%%%%%% /
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%/
 
 \begin{document}
 
+ 
 \begin{mycenter}
 \textbf{\LARGE Byron Poplawski} \\
 188 S 3rd St. Apt. 37, Brooklyn, NY 11211 \\
 (413)--270--2268 $\bullet$ \email{Byronpop@gmail.com} $\bullet$ \href{https://www.linkedin.com/in/byron-poplawski}{linkedin.com/in/Byron-Poplawski} $\bullet$ \href{https://github.com/ByronPop}{github.com/ByronPop}
 \end{mycenter}
 
+
 \begin{mycenter}[0pt]
-\textsc{\textbf{Education}}
+
+\textsc{\textbf{EDUCATION}}
+
 \end{mycenter}
-
 \vspace{-3mm}
+
 \rule{\textwidth}{0.4pt}
-
 \textbf{Skidmore College} \hfill  \textbf{Saratoga Springs, NY} \\
-\textit{Bachelor of Arts in Economics; Minor in Computer Science} \hfill May 2018
-
+\textit{Major: Economics (B.A.), Minor: Computer Science} \hfill May 2018
 \begin{itemize}[topsep=0pt,noitemsep]
-                \item[\I] Magna Cum Laude; Phi Beta Kappa
+    \item[\I]In-Major GPA: 4.0; Cumulative GPA: 3.8
+    \item[\I]Honors: Magna Cum Laude; Phi Beta Kappa
+
 \end{itemize}
 
 \vspace{2mm}
 
 \begin{mycenter}[0pt]
-\textsc{\textbf{Data Analysis Experience}}
+
+\textsc{\textbf{WORK EXPERIENCE}}
+
 \end{mycenter}
 
 \vspace{-3mm}
+
 \rule{\textwidth}{0.4pt}
 
 \textbf{Federal Reserve Bank of New York} \hfill \textbf{New York, NY} \\
-\textit{Analytics, Large Institutions Capital Program, PPNR} \hfill January 2019 -- Present
+\textit{Analyst, Financial Institution Supervision} \hfill July 2018 -- Present
+
 \begin{itemize}[topsep=0pt,noitemsep]
-                \item[\I] Developed analytics to identify trends and outliers in LISCC firm's stress test projections -- analyses primarily conducted in R, SQL, and Excel
-                \item[\I] Analyzed bank's interest rate risk exposure to products/industries and macro trends -- areas of research included retail mortgage banking, C\&I loans, and the LIBOR/SOFR transition 
+
+                 \item[\I] Develop Tableau dashboards to visualize bank balance sheet and financial market trends
+                 
+                  \item[\I] Conduct analyses to identify trends and outliers in large firm's (e.g., Bank of America) stress test projections. Analyses primarily conducted in R, SQL, and Excel
+
+                \item[\I] Research and write industry reports -- Research areas include mortgage banking, commercial \& industrial loans, and the LIBOR/SOFR transition
+                
+                
+
 \end{itemize}
 
 \vspace{1mm}
 
-\textbf{Craigslist Apartments R Shiny App} \hfill \textbf{New York, NY}\\
-\textit{Independent R Project}
-\hfill January 2019 -- March 2019
-\begin{itemize}[topsep=0pt,noitemsep]
-  \item[\I] Developed a front-end R shiny app to allow users to quickly visualize Craigslist NYC rental market data 
-  \item[\I] Wrote Python web scraper to collect Craigslist data and used R to merge data with other relevant market information (e.g., MTA Subway stops, historic neighborhood prices)
-  \item[\I] App features include: closest subways, commmute time to work, and price comparisons for similar nearby apartments. See the app here: \href{https://byronpop.shinyapps.io/CraigslistApartmentsApp/}{Craigslist Apartments App}
-\end{itemize}
-
-\vspace{2mm}
-
-\begin{mycenter}[0pt]
-\textsc{\textbf{Consulting and Technical Experience}}
-\end{mycenter}
-
-\vspace{-3mm}
-\rule{\textwidth}{0.4pt}
-
-
-\textbf{Federal Reserve Bank of New York} \hfill \textbf{New York, NY}\\
-\textit{Anti--Money Laundering Analyst, Large and Foreign Banking Organization}
-\hfill July 2018 -- January 2019
-\begin{itemize}[topsep=0pt,noitemsep]
-  \item[\I] Evaluated Bank Secrecy Act/anti--money laundering compliance programs at firms within the large foreign banking group 
-  \item[\I] Examined firm's customer identification, customer due diligence, and suspicious activity monitoring and reporting processes to ensure compliance with relevant rules and regulations 
-\end{itemize}
-
-\vspace{1mm}
+ 
 
 \textbf{Duff \& Phelps} \hfill \textbf{Boston, MA}\\
 \textit{Transfer Pricing Intern}
 \hfill June 2017 -- August 2017
+
 \begin{itemize}[topsep=0pt,noitemsep]
-  \item[\I] Conducted company comparability analyses for use in reports sent to Fortune 500 clients -- each analysis required examination of the functions performed, risks assumed, and financial health of more than 100 public companies 
-  \item[\I] Performed statistical analysis of intercompany transactions for large gold trading corporation 
+
+  \item[\I] Conducted company comparability analyses for use in reports sent to Fortune 500 clients -- Each analysis required examination of the functions performed, risks assumed, and financial health of more than 100 public companies
+
+  \item[\I] Performed regression analysis of inter-company transactions for large gold trading corporation
+
 \end{itemize}
+
+ 
+
+\vspace{1mm}
+
+\textbf{Patrivalor SGIIC} \hfill \textbf{Madrid, Spain}\\
+\textit{Junior Analyst}
+\hfill January 2017 -- May 2017
+\begin{itemize}[topsep=0pt,noitemsep]
+  \item[\I] Designed Java applications and VBA macros to reduce the need for manual input of data into Excel files
+  \item[\I] Conducted company and industry research - specifically relating to biotechnology
+
+\end{itemize}
+
+ 
 
 \vspace{2mm}
 
 \begin{mycenter}[0pt]
-\textsc{\textbf{Digital Skills \& Languages}}
+
+\textsc{\textbf{DATA SCIENCE PROJECTS}}
+
+\end{mycenter}
+
+
+\vspace{-3mm}
+
+\rule{\textwidth}{0.4pt}
+
+ 
+
+ 
+
+\textbf{Craigslist Apartments R Shiny App} \hfill \textbf{New York, NY}\\
+\hspace*{\fill}  February 2019 -- April 2019
+
+\begin{itemize}[topsep=0pt,noitemsep]
+
+  \item[\I] Developed real estate dashboard with R Shiny to allow users to quickly visualize Craigslist NYC rental market data
+  \item[\I] Scraped and analyzed raw data to show price comparisons for similar nearby apartments, neighborhood pricing trends, and subway commute time
+  
+  (App here:  \emph{\href{https://byronpop.shinyapps.io/CraigslistApartmentsApp/}{Craigslist Apartments App}})
+
+\end{itemize}
+
+ 
+
+\vspace{1mm}
+
+ 
+
+\textbf{Computer Science Coursework} \hfill \textbf{Saratoga Springs, NY}\\
+\textit{Student}
+\hspace*{\fill}  September 2015 -- May 2018
+
+\begin{itemize}[topsep=0pt,noitemsep]
+
+  \item[\I] Algorithms: Designed and analyzed efficiency of sorting, graph, and dynamic programming algorithms
+  \item[\I] Databases:  Programmed relational database and linked it to a Java front end
+  \item[\I] Programming Languages: Surveyed C, Python and Lisp and designed interpreter with Regex matching 
+ 
+
+  \end{itemize}
+
+\vspace{2mm}
+
+ 
+
+\begin{mycenter}[0pt]
+
+\textsc{\textbf{DIGITAL SKILLS \& LANGUAGES}}
+
 \end{mycenter}
 
 \vspace{-3mm}
+
 \rule{\textwidth}{0.4pt}
 
-\vspace{1.5mm}
+\vspace{1mm}
 
 \begin{tabularx}{\linewidth}{ll}
 
-\hspace{-3mm}
-
-\textbf{Digital Skills}: & macOS, Windows \\
-  & Proficient in R (shiny, tidyverse), Python (selenium, numpy, pandas), Java, and Excel\\
-  & Previous experience with Tableau, SQL, C++ \\[1mm]
+ 
 
 \hspace{-3mm}
-\textbf{Languages}: & English, Spanish (proficient) \\
+
+ 
+
+\textbf{Digital Skills}: &  \\
+
+  & Proficient in R, Excel, Tableau, and SQL\\
+
+ & Previous experience with Java, Python, and C++ \\[1mm]
+
+ 
+
+\hspace{-3mm}
+
+\textbf{Languages}: & English, Spanish \\
+
 & *Authorized to work in both the U.S and European Union \\
 [1mm]
 
+ 
+
 \end{tabularx}
 
+ 
+
 \end{document}
+
+ 
+
